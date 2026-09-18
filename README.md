@@ -28,6 +28,9 @@
 │   ├── board.sql             #   запрос табло: следующие 15 рейсов с остановки
 │   ├── explain.sql           #   EXPLAIN / EXPLAIN ANALYZE запроса табло
 │   └── README.md             #   модель, индексы, разбор плана выполнения
+├── task3-integration/        # Задание 3: архитектура интеграции
+│   └── README.md             #   Битрикс24 ↔ Moodle ↔ ЛК: мастер-данные, потоки,
+│                             #   очередь/outbox, идемпотентность, Moodle down 6ч
 └── .github/workflows/ci.yml  # CI: PHPUnit на PHP 8.1–8.3
 ```
 
