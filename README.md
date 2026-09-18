@@ -19,9 +19,15 @@
 ## Структура
 
 ```
-├── public/index.php          # HTTP-эндпоинт (тонкий контроллер)
-├── src/Palindrome.php        # доменная логика
-├── tests/PalindromeTest.php  # PHPUnit, data provider с 14 кейсами
+├── public/index.php          # Задание 1: HTTP-эндпоинт (тонкий контроллер)
+├── src/Palindrome.php        # Задание 1: доменная логика
+├── tests/PalindromeTest.php  # Задание 1: PHPUnit, data provider с 14 кейсами
+├── bus-schedule/             # Задание 2: расписание автобусов (MySQL 8)
+│   ├── schema.sql            #   DDL: города/остановки/автобусы/маршруты/граф/рейсы
+│   ├── seed.sql              #   сид: 5 городов, 20 автобусов, 14 маршрутов, 504 рейса
+│   ├── board.sql             #   запрос табло: следующие 15 рейсов с остановки
+│   ├── explain.sql           #   EXPLAIN / EXPLAIN ANALYZE запроса табло
+│   └── README.md             #   модель, индексы, разбор плана выполнения
 └── .github/workflows/ci.yml  # CI: PHPUnit на PHP 8.1–8.3
 ```
 
